@@ -1,0 +1,38 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.title-line-left {
+    position: relative;
+    padding-left: 104px;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 80px;
+        height: 1px;
+        background-color: rgba(#fff, .5)
+    }
+}
+
+.animate-line {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+    animation-delay: 6s;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
