@@ -25,13 +25,14 @@ body {
 }
 
 .animate-line {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s linear forwards;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 600;
+    animation-name: line;
+    animation-duration: 100s;
     animation-delay: 6s;
 }
 
-@keyframes dash {
+@keyframes line {
     to {
       stroke-dashoffset: 0;
     }
