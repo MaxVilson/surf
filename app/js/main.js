@@ -26,5 +26,11 @@ $(function(){
         slidesToScroll: 1,
         asNavFor: '.surf__slider',
         focusOnSelect: true
-    })
+    });
+
+    $('.travel__slider').slick({
+        fade: true,
+        prevArrow: '<img class="travel__item-head-text-arrows-left" src="img/arrow-left.svg" alt="arrow">',
+        nextArrow: '<img class="travel__item-head-text-arrows-right" src="img/arrow-right.svg" alt="arrow">'
+    });
 });
